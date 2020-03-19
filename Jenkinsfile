@@ -32,6 +32,24 @@ pipeline
                     }
                 }
             }
+            stage('Four')
+            {
+                parallel
+                {
+                    stage('Unit Test')
+                    {
+                        steps{
+                            echo "runnig the unit test"
+                        }
+                    }
+                    stage('Integration Test')
+                    {
+                        steps{
+                            echo "Running the integration test"
+                        }
+                    }
+                }
+            }
         }
 }
 =======

@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'echo as'
+                bat 'java --version'
             }
         }
         

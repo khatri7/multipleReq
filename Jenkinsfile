@@ -3,8 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'echo hello world'
+                bat 'mvn compile'
             }
         }
+        
     }
 }

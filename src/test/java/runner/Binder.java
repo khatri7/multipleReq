@@ -6,6 +6,6 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/jsonserver.feature",glue="stepDefinition",plugin= {"pretty","html:target/cucumber-reports"})
+@CucumberOptions(features="src/test/resources/reqres.feature",glue="stepDefinition",plugin= {"pretty","html:target/cucumber-reports"})
 public class Binder {
 }
